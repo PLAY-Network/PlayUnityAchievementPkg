@@ -151,6 +151,20 @@
             of <see cref="T:RGN.Modules.Achievement.AchievementWithUserData"/> objects representing the achievements that match the current application identifier,
             limit and other optional parameters.</returns>
         </member>
+        <member name="M:RGN.Modules.Achievement.AchievementsModule.GetByIdsWithUserDataAsync(System.Collections.Generic.List{System.String},System.Boolean,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Asynchronously retrieves achievements from the Ready Games Network (RGN)
+            based on the provided achievement identifiers.
+            </summary>
+            <param name="ids">A list of achievement identifiers used to filter the achievements.</param>
+            <param name="withHistory">Should populate returned achievements by completion history</param>
+            <param name="userId">User id to return the achievements</param>
+            <param name="cancellationToken">A token to cancel the operation.</param>
+            <exception cref="T:System.ArgumentException">Thrown when the provided limit value is zero.</exception>
+            <returns>A Task representing the asynchronous operation. The Result property of the Task returns a list
+            of <see cref="T:RGN.Modules.Achievement.AchievementWithUserData"/> objects representing the achievements that match the current application identifier,
+            limit and other optional parameters.</returns>
+        </member>
         <member name="M:RGN.Modules.Achievement.AchievementsModule.GetByRequestNameAsync(System.String,System.Threading.CancellationToken)">
             <summary>
             Asynchronously retrieves a achievement from the Ready Games Network (RGN)
